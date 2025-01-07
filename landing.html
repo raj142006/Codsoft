@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Landing Page</title>
+  <link rel="stylesheet" href="landing.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo-section">
+        <i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;&nbsp;
+        <i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;&nbsp;
+        <i class="fa-brands fa-twitter"></i>&nbsp;&nbsp;&nbsp;
+        <i class="fa-brands fa-whatsapp"></i>&nbsp;&nbsp;&nbsp;
+        <i class="fa-brands fa-linkedin"></i>&nbsp;&nbsp;
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        <li><a href="#signin"><i class="fas fa-sign-in-alt"></i> Sign In</a></li>
+        <li><a href="#login"><i class="fas fa-user"></i> Log In</a></li>
+      </ul>
+    </div>
+  </nav>  
+  <header class="header">
+    <div class="container">
+      <h1>Welcome to My Landing Page</h1>
+      <h3>Discover the simplicity of creating stunning web designs.</h3>
+      <br>
+      <a href="#services" class="btn">Explore More</a>
+    </div>
+  </header>
+  <section id="features" class="features">
+    <div class="container">
+      <h2>Features</h2>
+      <div class="feature-cards">
+        <div class="card">
+          <h3>Easy to Use</h3>
+          <p>Simple and user-friendly designs for everyone.</p>
+        </div>
+        <div class="card">
+          <h3>Responsive Design</h3>
+          <p>Optimized for all devices, from desktops to smartphones.</p>
+        </div>
+        <div class="card">
+          <h3>Customizable</h3>
+          <p>Unleash your creativity with endless design options.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>"We are deeply passionate about web development and design, striving to inspire and guide beginners in mastering the fundamentals. Our mission is to make learning accessible and enjoyable,
+         empowering everyone to bring their creative visions to life. With our support, you can confidently build amazing projects that leave a lasting impact."</p>
+    </div>
+  </section>
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <h2>Image Gallery</h2>
+      <div class="gallery-grid">
+        <figure>
+          <img src="image 2.jpeg" alt="Gallery Image 1" />
+          <figcaption>empower your communication with<br> 
+            innovative email solutions!</figcaption>
+        </figure>
+        <figure>
+          <img src="image3.jpeg" alt="Gallery Image 2" />
+          <figcaption>connect across platforms effortlessly</figcaption>
+        </figure>
+        <figure>
+          <img src="image4.jpeg" alt="Gallery Image 3" />
+          <figcaption>connect, engage, and grow with ease</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+  <section id="media" class="media">
+    <div class="container">
+      <h2>Listen to our introduction Video</h2>
+      <video controls>
+        <source src="video1.mp4" type="video/mp4">
+      </video>
+      <h2>Listen to Our Podcast</h2>
+      <audio controls>
+        <source src="audio1.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+    </div>
+  </section>
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="submit_form.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+  <footer class="footer">
+    <p>&copy; 2024 My Landing Page. All Rights Reserved.</p>
+  </footer>
+  <script src="landing.js"></script>
+</body>
+
+</html>
